@@ -1,0 +1,277 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background: #000;
+	color: #fff;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	background-image: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("background.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8px;
+	position: relative;
+
+}
+nav{
+	padding-top: 1%;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	align-items: center;
+}
+.img-logo{
+	width: 200px;
+	height: 200px;
+}
+button {
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color:#EF0000; 
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    
+
+}
+button:hover{
+	background-color: green;
+}
+
+.language-btn img{
+	height: 15px;
+	width: 15px;
+	margin-left: 10px;
+
+}
+.main-container{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	cursor: auto;
+	color: white;
+	padding-bottom: 20px;
+
+}
+.main-title-container{
+	width: 50%;
+	text-align: center;
+}
+.main-title{
+	font-size: 3.2em;
+}
+.main-subtitle{
+	font-family: Arial ,helventica,sans-serif;
+	font-size: 1.5em;
+}
+.main-paragraph{
+	font-family: Arial ,helventica,sans-serif;
+	font-size: 1.2em;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.email-container{
+	width: 55%;
+	height:fit-content;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 40px;
+}
+.input-email-container{
+	outline: none;
+	border :none;
+	padding: 20px 10px;
+	font-size: 20px;
+	padding-top: 20px;
+}
+.button{
+	cursor: pointer;
+	padding:  20px 10px;
+	height: fit-content;
+	background-color: red;
+	font-size: 20px;
+	text-align: center;
+}
+.button:hover{
+	background-color: #E20000;
+
+}
+.feactures{
+	padding: 50px 12px;
+	font-size: 25px;
+}
+.text-col{
+	flex-basis: 50%;
+	margin-bottom: 20px;
+
+}
+.row{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 50px 0;
+}
+.imagetv img{
+	height: 500px;
+	width: 600px;
+	display: block;
+	margin: auto;
+}
+.feactures h2{
+	font-size: 50px;
+	font-weight: 600;
+	padding-left: 130px;
+	margin-bottom: 20px;
+
+}
+.feactures p{
+	padding-left: 130px;
+}
+.imagechild img{
+	height: 500px;
+	width: 600px;
+	display: block;
+	margin: auto;
+	padding-left: 50px;
+	
+}
+
+.questions{
+	
+	margin: 60px auto;
+	width: 100%;
+	max-width: 750px;
+}
+.questions li{
+	list-style: none;
+	width: 100%;
+	padding:10px ;
+}
+.questions h1{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.questions li label{
+	display: flex;
+	
+	height: 50px;
+	width: 800px;
+	align-items: center;
+    padding-left: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	background: #303030;
+	margin-bottom: 2px;
+	cursor: pointer;
+	position: relative;
+
+}
+label::after{
+	content: '+';
+	font-size: 34px;
+	position:absolute ;
+	right: 25px;
+	transition: transform 0.5s ;
+}
+input[type="radio"]{
+	display: none;
+}
+.questions .content{
+    width: 800px;
+	background: #303030;
+	text-align: left;
+	padding: 0 20px;
+	max-height: 0;
+	overflow: hidden;
+	transition:  max-height 0.5s , padding 0.5s ;
+	
+}
+.questions input[type="radio"]:checked + label + .content{
+	max-height: 600px;
+	padding: 25px 20px;
+}
+.questions input[type="radio"]:checked + label::after
+{
+	transform: rotate(45deg);
+}
+.questions h3{
+	
+	text-align: center;
+	margin-top: 40px;
+	font-size: 20px;
+}
+.email{
+	
+	padding-left:10px ;
+	max-width: 600px;
+    height: fit-content;
+   background-color: white;
+   display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 40px;
+margin-left:90px ;
+}
+
+.footer{
+	padding: 50px 15% 10px;
+	border-top: 6px solid #333;
+	color: #777;
+}
+.footer h3{
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.footer .column{
+	flex-basis: 25%;
+	flex-grow:1 ;
+	margin-bottom: 20px;
+}
+.footer .column a{
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.footer .row{
+	align-items: flex-start;
+	padding: 10px 0;
+
+}
+.footer .btn{
+	
+
+	display: flex;
+	color: rgba(255,255,255,0.7);
+	margin-bottom: 20px;
+	background-color: transparent;
+padding: 10px 20px;
+border-radius: 8px;
+border-color: white;
+
+}
